@@ -54,6 +54,7 @@ export default VerticalBarChart;
 
 const style = StyleSheet.create({
   chart: {
+    flex: 1,
     height: 300,
     width: '100%',
   },

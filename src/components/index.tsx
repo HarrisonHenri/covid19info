@@ -5,7 +5,7 @@ import HighchartsReactNative from '@highcharts/highcharts-react-native';
 import { TextProps, TouchableOpacityProps, ViewProps } from 'react-native';
 
 export const Container = styled.ScrollView.attrs({
-  showsVerticalScrollIndicator: true,
+  showsVerticalScrollIndicator: false,
 })`
   flex: 1;
   background: ${colors.dark50};
