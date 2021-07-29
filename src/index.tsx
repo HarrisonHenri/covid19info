@@ -1,21 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
 import React from 'react';
-import {Text, View} from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { Container } from './components';
+import GlobalStats from './components/global-stats/global-stats';
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello</Text>
-    </View>
+    <Container>
+      <SafeAreaView>
+        <GlobalStats />
+      </SafeAreaView>
+    </Container>
   );
 };
 
