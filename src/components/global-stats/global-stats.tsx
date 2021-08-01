@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import { Alert } from 'react-native';
 
 import { Box, Label, Row } from '..';

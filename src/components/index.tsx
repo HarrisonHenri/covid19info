@@ -1,5 +1,6 @@
-import HighchartsReactNative from '@highcharts/highcharts-react-native';
 import { TextProps, TouchableOpacityProps, ViewProps } from 'react-native';
+
+import HighchartsReactNative from '@highcharts/highcharts-react-native';
 import styled from 'styled-components/native';
 
 import colors from '../styles/colors';
@@ -79,9 +80,8 @@ export const Label = styled.Text<CustomTextProps>`
   color: ${props => (props.color ? colors[props.color] : colors.grey)};
   font-size: ${props =>
     props.type ? typography[props.type] : typography.label};
-  font-weight: ${props =>
-    ['title', 'subtitle'].includes(props.type ?? '') ? 'bold' : 'normal'};
   align-self: ${props => props.align || 'flex-start'};
+  font-family: 'Roboto-Black
 `;
 
 export const Chart = styled(HighchartsReactNative).attrs({})``;
