@@ -1,8 +1,9 @@
-import colors from '../styles/colors';
-import typography from '../styles/typography';
-import styled from 'styled-components/native';
 import HighchartsReactNative from '@highcharts/highcharts-react-native';
 import { TextProps, TouchableOpacityProps, ViewProps } from 'react-native';
+import styled from 'styled-components/native';
+
+import colors from '../styles/colors';
+import typography from '../styles/typography';
 
 export const Container = styled.ScrollView.attrs({
   showsVerticalScrollIndicator: false,
@@ -50,7 +51,7 @@ interface CustomTouchableOpacityProps extends TouchableOpacityProps {
 
 export const Picker = styled.TouchableOpacity<CustomTouchableOpacityProps>`
   background: ${props => (props.active ? colors.primary : 'transparent')};
-  padding: 7px 35px;
+  padding: 8px 16px;
   border-radius: 20px;
 `;
 
